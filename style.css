@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 
-/* Sidebar icons */
+/* ----------Sidebar icons---------- */
 .material-symbols-outlined {
     font-variation-settings:
     'FILL' 0,
@@ -17,7 +17,6 @@
     --border-radius-3: 1.2rem;
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
-    --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
 * {
@@ -40,7 +39,7 @@ body {
     height: 100vw;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background: white;
+    background-image: linear-gradient(45deg, #6196bf, #eaebed, #86b3cf);
     user-select: none;
     overflow-x: hidden;
 }
@@ -51,6 +50,7 @@ body {
     margin-left: 15px;
     gap: 5rem;
     grid-template-columns:15rem auto 34rem;
+    border-radius: 1.2rem;
 }
 
 a {
@@ -79,16 +79,17 @@ img {
 }
 
 p {
-    color: pink;
+    color: rgb(115, 157, 191);
 }
 
 b {
     color: darkcyan;
 }
-/* 
+
 aside {
-    height: 80px;
-} */
+    border-radius: 1.5rem;
+    background: white;
+}
 
 aside.top {
     display: flex;
@@ -101,16 +102,15 @@ aside .logo {
 
 aside .logo img {
     margin-top: 4rem;
-    margin-bottom: 3rem;
-    width: 12rem;
-    height: 4rem;
+    width: 15rem;
+    height: 5rem;
 }
 
 aside .close {
     display: none;
 }
 
-/* ---------Sidebar--------*/
+/* ------------Sidebar------------*/
 aside .sidebar {
     background: white;
     display: flex;
@@ -135,12 +135,64 @@ aside .sidebar a {
 }
 
 aside .sidebar a span {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin-right: 0.5rem;
+    transition: all 300ms ease;
 }
 
 aside .sidebar a:hover {
-    color: rgb(83, 136, 181);
-    background:rgb(241, 249, 249);
+    color: rgb(140, 129, 129);
+    background-image: linear-gradient(45deg, #eaedef, #cfe4f9, #c8d9f4);
+    background-size: cover;
+    margin-left: 2rem;
+    width: 150px;
+    height:80px;
+    border-radius: 0.8rem;
 }
 
+/* aside .sidebar .message-count {
+    padding: 2px 10px;
+    font-size: 11px;
+    border-radius: var(--border-radius-1);
+} */
+
+
+/* ---------------Main-------------*/
+main {
+    margin-top: 1.4rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem; 
+    justify-content: space-around;;
+}
+
+main .date {
+    display: grid;
+    border:1px solid rgb(97, 144, 197);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1.6rem;
+}
+
+main .date input {
+    background: transparent;
+    color: rgb(97, 144, 197);
+}
+
+main .insights {
+    background: white;
+    box-sizing: border-box;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 1.2rem;
+    height: 200px;
+    width: 400px;
+}
+
+main .insights > div {
+    padding: var(--card-padding);
+    border-radius: 1.2rem;
+    margin-top: 3rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
