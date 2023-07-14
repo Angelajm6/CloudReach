@@ -39,7 +39,7 @@ body {
     height: 100vw;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    background-image: linear-gradient(45deg, #6196bf, #eaebed, #86b3cf);
+    background-image: linear-gradient(45deg, #6196bf, #eaebed, #a4c2d4);
     user-select: none;
     overflow-x: hidden;
 }
@@ -71,12 +71,12 @@ img {
 } */
 
 .text-muted {
-    color: grey;
+    color: rgb(140, 129, 129);
+    word-spacing: 20px;
 }
 
 p {
     color: rgb(115, 157, 191);
-    
 }
 
 b {
@@ -157,7 +157,7 @@ aside .sidebar a:hover {
 /* ---------------Main-------------*/
 main {
     display:flex;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     border-radius: 20px;
     padding: 1rem 1rem; 
 }
@@ -178,23 +178,21 @@ main .date input {
 }
 
 main .insights {
-    box-sizing: border-box;
     position:relative;
     display: flex;
     justify-content: center;
     align-items: center;
     grid-gap: 1rem;
     border-radius: 1rem;
-    height: 20rem;
-    width: 100rem;
-    margin-top: 8rem;
+    margin-bottom: 22rem;
 }
 
 main .insights > div {
     background: white;
     padding:2rem;
     border-radius: 1.2rem;
-    margin-top: 3rem;
+    height: 250px;
+    width: 450px;
     transition: all 300ms ease;
 }
 
@@ -204,8 +202,7 @@ main .insights > div:hover {
 
 main .insights > div .middle {
     background: white;
-    padding: 1.3rem;
-    font-size: 1rem;
+    padding: 1.2rem;
 }
 
 main .insights > div .expenses .middle {
@@ -224,32 +221,96 @@ main .insights > div .middle {
 
 main .insights h3 {
     color: rgb(140, 129, 129);
-    letter-spacing: 1px;
-    margin:0 0 0.6rem;
-    margin-bottom: 5rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 75px;
     font-size: 14px;
     font-weight: 500;
 }
 
 main .insights .progress {
-    position: relative;
+    position:relative;
     width: 110px;
     height: 100px;
 }
 
 main .insights h1 {
-   text-align: center;
-   font-size:2.2rem;
+   font-size:2.8rem;
+    margin-top: 4rem;
+    font-weight: 200;
 }
 
 main .insights .progress .number p {
-    margin-top: 16rem;
     text-align:left;
-    font-size:14px;
+    font-size:10px;
     
 }
 
 main .insights small {
-    margin-top: 10rem;
+    margin-top: 3.5rem;
+    display:block;
+    margin: 10px;
+    font-size:12px;
+}
+
+main .insights .left {
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*---------------Tasks--------------*/
+main .recent-tasks {
+    margin-top: 30rem;
+    position: absolute;
+    background: white;
+    padding:2rem;
+    border-radius: 1.2rem;
+    height: 30rem;
+    width: 115rem;
+}
+
+main .recent-tasks h2 {
+    margin-bottom: 0.8rem;
+    margin-left: 12px;
+    color: rgb(140, 129, 129);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+main .recent-tasks table {
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    padding: var( --card-padding);
+    text-align: center;
+    box-shadow:rgb(102 105 108);
+    transition: all 300ms ease;
+}
+
+main .recent-tasks table:hover {
+    box-shadow: none;
+}
+
+.recent-tasks table tbody {
+    align-items: center;
+    text-align: center;
+}
+
+.recent-tasks table tbody td {
+    height: 3.8rem;
+    border-bottom: 0.5px solid  rgb(140, 129, 129);
+    color: black;
+    padding: 1px 40px;
+
+}
+
+main table tbody tr:last-child td {
+    border: none;
+}
+
+main .recent-tasks a {
+    text-align: center;
     display: block;
+    margin: 1rem auto;
+
 }
